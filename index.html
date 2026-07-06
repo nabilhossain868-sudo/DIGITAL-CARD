@@ -3,156 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nabil Mahmud | Spider Profile</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<title>Nabil Mahmud | Digital Card</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#000;
-color:#fff;
 display:flex;
 justify-content:center;
 align-items:center;
 min-height:100vh;
-background-image:linear-gradient(#000,#111);
+background:linear-gradient(-45deg,#000,#220000,#550000,#000);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 .card{
 width:360px;
 padding:30px;
-border-radius:20px;
-background:#111;
+background:rgba(20,20,20,.9);
 border:2px solid red;
-box-shadow:0 0 30px red;
+border-radius:20px;
 text-align:center;
+box-shadow:0 0 30px red;
 }
 
-img{
+.card img{
 width:140px;
 height:140px;
 border-radius:50%;
-object-fit:cover;
 border:4px solid red;
+object-fit:cover;
+margin-bottom:15px;
 }
 
 h1{
-margin-top:15px;
 color:red;
+margin-bottom:10px;
 }
 
 p{
-margin:10px 0 20px;
 color:#ddd;
+margin-bottom:20px;
 }
 
-a{
+.button{
 display:block;
-text-decoration:none;
 margin:12px 0;
 padding:14px;
-border-radius:12px;
 background:red;
 color:white;
+text-decoration:none;
+border-radius:10px;
 font-weight:bold;
 transition:.3s;
 }
 
-a:hover{
+.button:hover{
 background:white;
 color:red;
+transform:scale(1.05);
+}
+
+.button i{
+margin-right:10px;
 }
 
 .footer{
 margin-top:20px;
-font-size:13px;
 color:#aaa;
-}
-  body{
-    background: linear-gradient(-45deg,#000000,#140000,#300000,#000000);
-    background-size:400% 400%;
-    animation:bgMove 12s ease infinite;
-}
-
-@keyframes bgMove{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
-}
-
-.card{
-    backdrop-filter: blur(18px);
-    background:rgba(20,20,20,.75);
-    border:1px solid rgba(255,0,0,.4);
-    box-shadow:0 0 40px rgba(255,0,0,.45);
-    animation:floatCard 4s ease-in-out infinite;
-}
-
-@keyframes floatCard{
-    50%{transform:translateY(-8px);}
-}
-
-img{
-    animation:pulse 2.5s infinite;
-}
-
-@keyframes pulse{
-    0%{box-shadow:0 0 0 red;}
-    50%{box-shadow:0 0 35px red;}
-    100%{box-shadow:0 0 0 red;}
-}
-
-a{
-    position:relative;
-    overflow:hidden;
-}
-
-a:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 20px red;
+font-size:13px;
 }
 </style>
 
-<script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 <div class="card">
 
-<img src="profile.jpg" alt="Nabil Mahmud">
-  
- <h1>🕷️ Nabil Mahmud</h1>
-  
-<p>SPOIDY's Digital Card</p> 
+<img src="profile.jpg" alt="Profile">
 
+<h1>🕷️ Nabil Mahmud</h1>
 
-<a href="https://wa.me/966570743590" target="_blank">
-    <i class="fab fa-whatsapp"></i> WhatsApp
-</a>
-<a href="https://www.facebook.com/spiderXnabil" target="_blank" class="button">
-    <i class="fab fa-facebook-f"></i> Facebook
+<p>SPOIDY's Digital Card</p>
+
+<a class="button" href="https://wa.me/966570743590" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp
 </a>
 
-<a href="https://www.instagram.com/spoidy.x.nabu" target="_blank">
-    <i class="fab fa-instagram"></i> Instagram
+<a class="button" href="https://www.facebook.com/spiderXnabil" target="_blank">
+<i class="fab fa-facebook-f"></i> Facebook
 </a>
 
-<a href="mailto:nabilmahmud.noon@gmail.com">
-    <i class="fas fa-envelope"></i> Email
+<a class="button" href="https://www.instagram.com/spoidy.x.nabu" target="_blank">
+<i class="fab fa-instagram"></i> Instagram
+</a>
+
+<a class="button" href="mailto:nabilmahmud.noon@gmail.com">
+<i class="fas fa-envelope"></i> Email
 </a>
 
 <div class="footer">
-  © 2026 Nabil Mahmud
+© 2026 Nabil Mahmud
 </div>
 
 </div>
+
 </body>
 </html>
