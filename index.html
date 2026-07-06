@@ -75,6 +75,49 @@ margin-top:20px;
 font-size:13px;
 color:#aaa;
 }
+  body{
+    background: linear-gradient(-45deg,#000000,#140000,#300000,#000000);
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card{
+    backdrop-filter: blur(18px);
+    background:rgba(20,20,20,.75);
+    border:1px solid rgba(255,0,0,.4);
+    box-shadow:0 0 40px rgba(255,0,0,.45);
+    animation:floatCard 4s ease-in-out infinite;
+}
+
+@keyframes floatCard{
+    50%{transform:translateY(-8px);}
+}
+
+img{
+    animation:pulse 2.5s infinite;
+}
+
+@keyframes pulse{
+    0%{box-shadow:0 0 0 red;}
+    50%{box-shadow:0 0 35px red;}
+    100%{box-shadow:0 0 0 red;}
+}
+
+a{
+    position:relative;
+    overflow:hidden;
+}
+
+a:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px red;
+}
 </style>
 
 </head>
